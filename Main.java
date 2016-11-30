@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -14,13 +15,14 @@ public class Main {
             controller.learner(students[i]);
             controller.alphabet(students[i]);
         }
+        Arrays.sort(students);
         for (int i = 0; i < n; i++) {
             verification(students[i], view, n);
         }
 
     }
 
-    static int count = 0;
+         static int count = 0;
 
     public static void verification(School sc, View view, int n) {
 
